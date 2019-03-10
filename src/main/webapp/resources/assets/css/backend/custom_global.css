@@ -1,0 +1,233 @@
+/*panel*/
+.panel-default > .panel-heading
+{
+  
+    background: #D4D4D4;
+    color: #111111;
+}
+
+/*textbox search*/
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display: block;
+}
+
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+
+
+/*welcome*/
+
+
+.alert-message
+{
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+.alert-message h4
+{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.alert-message p:last-child
+{
+  margin-bottom: 0;
+}
+.alert-message code
+{
+  background-color: #fff;
+  border-radius: 3px;
+}
+.alert-message-success
+{
+  background-color: #F4FDF0;
+  border-color: #3C763D;
+}
+.alert-message-success h4
+{
+  color: #3C763D;
+}
+.alert-message-danger
+{
+  background-color: #fdf7f7;
+  border-color: #d9534f;
+}
+.alert-message-danger h4
+{
+  color: #d9534f;
+}
+.alert-message-warning
+{
+  background-color: #fcf8f2;
+  border-color: #f0ad4e;
+}
+.alert-message-warning h4
+{
+  color: #f0ad4e;
+}
+.alert-message-info
+{
+  background-color: #f4f8fa;
+  border-color: #5bc0de;
+}
+.alert-message-info h4
+{
+  color: #5bc0de;
+}
+.alert-message-default
+{
+  background-color: #EEE;
+  border-color: #B4B4B4;
+}
+.alert-message-default h4
+{
+  color: #000;
+}
+.alert-message-notice
+{
+  background-color: #FCFCDD;
+  border-color: #BDBD89;
+}
+.alert-message-notice h4
+{
+  color: #444;
+}
+
+
+/*bread cumb*/
+.breadcrumb {
+    padding: 0px;
+  background: #D4D4D4;
+  list-style: none; 
+  overflow: hidden;
+    margin-top: 20px;
+}
+.breadcrumb>li+li:before {
+  padding: 0;
+}
+.breadcrumb li { 
+  float: left; 
+}
+.breadcrumb li.active a {
+  background: brown;                   /* fallback color */
+  background: #ffc107 ; 
+}
+.breadcrumb li.completed a {
+  background: brown;                   /* fallback color */
+  background: hsla(153, 57%, 51%, 1); 
+}
+.breadcrumb li.active a:after {
+  border-left: 30px solid #ffc107 ;
+}
+.breadcrumb li.completed a:after {
+  border-left: 30px solid hsla(153, 57%, 51%, 1);
+} 
+
+.breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 45px;
+  position: relative; 
+  display: block;
+  float: left;
+}
+.breadcrumb li a:after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(0, 0%, 83%, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+} 
+.breadcrumb li a:before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+} 
+.breadcrumb li:first-child a {
+  padding-left: 15px;
+}
+.breadcrumb li a:hover { background: #ffc107  ; }
+.breadcrumb li a:hover:after { border-left-color: #ffc107   !important; }
+
+
+/*table*/
+th
+{
+  text-align: center !important;
+}
+table thead
+{
+    color: #111111;
+    background: #D4D4D4;
+}
+
+
+

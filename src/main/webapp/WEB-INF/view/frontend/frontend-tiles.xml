@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!-- Base Define -->
+    <definition name="frontendBase.definition" template="/WEB-INF/view/frontend/layout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="content_front" value=""/>
+        <put-list-attribute name="stylesheets">
+        </put-list-attribute>
+        <put-list-attribute name="javascripts">
+        </put-list-attribute>
+        <!--<put-attribute name="footer" value="/WEB-INF/view/backend/layout/layout.jsp" />-->
+    </definition>
+
+    <definition name="home.template" extends="frontendBase.definition">
+        <put-attribute name="title" value="Home"/>
+        <put-attribute name="content_front" value="/WEB-INF/view/frontend/home.jsp"/>
+        <put-list-attribute name="stylesheets">
+            <add-attribute value="/resources/assets/css/frontend/home.css"></add-attribute>
+        </put-list-attribute>
+        <put-list-attribute name="javascripts">
+            <add-attribute value="/resources/assets/js/frontend/home.js"></add-attribute>
+        </put-list-attribute>
+    </definition>
+
+    <definition name="login.template" extends="frontendBase.definition">
+        <put-attribute name="title" value="Login"/>
+        <put-attribute name="content_front" value="/WEB-INF/view/frontend/login.jsp"/>
+        <put-list-attribute name="stylesheets">
+            <add-attribute value="/resources/assets/css/frontend/login.css"></add-attribute>
+        </put-list-attribute>
+    </definition>
+
+    <definition name="contactus.template" extends="frontendBase.definition">
+        <put-attribute name="title" value="ContactUs"/>
+        <put-attribute name="content_front" value="/WEB-INF/view/frontend/contactus.jsp"/>
+        <put-list-attribute name="stylesheets">
+            <add-attribute value="/resources/assets/css/frontend/contact_us.css"></add-attribute>
+        </put-list-attribute>
+    </definition>
+
+    <definition name="sign_up.template" extends="frontendBase.definition">
+        <put-attribute name="title" value="Sign Up"/>
+        <put-attribute name="content_front" value="/WEB-INF/view/frontend/sign_up.jsp"/>
+        <put-list-attribute name="stylesheets">
+            <add-attribute value="/resources/assets/css/frontend/sign_up.css"></add-attribute>
+        </put-list-attribute>
+    </definition>
+</tiles-definitions>

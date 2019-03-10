@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- <prudent>true</prudent> -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+
+        <file>${java.io.tmpdir:-.}/nicenetwork-logfile/eproc.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- ganti file setiap hari -->
+            <fileNamePattern>
+                ${java.io.tmpdir:-.}/nicenetwork-logfile/eproc.%d{yyyy-MM-dd}.log.gz
+            </fileNamePattern>
+            <!-- simpan file selama setahun (12 * 31) -->
+            <maxHistory>365</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.nicenetwork.controller">
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <root>
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>

@@ -1,0 +1,20 @@
+#Database related properties
+database.driverClass=com.mysql.jdbc.Driver
+database.url=jdbc:mysql:///nicenetworkdb
+database.username=root
+database.password=
+
+#Connection pool related properties
+connection.maxWait=40000
+connection.maxActive=80
+connection.minIdle=10
+connection.maxIdle=20
+connection.initialSize=10
+connection.testOnBorrow=true
+connection.validationQuery=SELECT 1
+
+#Hibernate related properties
+hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.hbm2ddl.auto=update
+hibernate.show_sql=true
+hibernate.format_sql=true

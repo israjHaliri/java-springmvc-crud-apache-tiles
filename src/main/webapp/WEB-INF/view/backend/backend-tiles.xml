@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- Base Define -->
+    <definition name="backendBase.definition" template="/WEB-INF/view/backend/layout/layout.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="content" value="" />
+        <put-list-attribute name="stylesheets">
+        </put-list-attribute>
+        <put-list-attribute name="javascripts">
+        </put-list-attribute>
+    </definition>
+
+    <definition name="dashboard.template" extends="backendBase.definition">
+        <put-attribute name="title" value="Dashboard" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/dashboard/index.jsp" />
+    </definition>
+
+    <definition name="user.index.template" extends="backendBase.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/user/index.jsp" />
+    </definition>
+
+    <definition name="user.insert.template" extends="backendBase.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/user/insert.jsp" />
+    </definition>
+
+    <definition name="user.edit.template" extends="backendBase.definition">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/user/edit.jsp" />
+    </definition>
+
+    <definition name="landing_page.index.template" extends="backendBase.definition">
+        <put-attribute name="title" value="Landing Page" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/landing_page/index.jsp" />
+    </definition>
+
+    <definition name="landing_page.insert.template" extends="backendBase.definition">
+        <put-attribute name="title" value="Landing Page" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/landing_page/insert.jsp" />
+    </definition>
+
+    <definition name="landing_page.edit.template" extends="backendBase.definition">
+        <put-attribute name="title" value="Landing Page" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/landing_page/edit.jsp" />
+    </definition>
+
+    <definition name="landing_page.file.template" extends="backendBase.definition">
+        <put-attribute name="title" value="Landing Page" />
+        <put-attribute name="content" value="/WEB-INF/view/backend/landing_page/file.jsp" />
+    </definition>
+
+</tiles-definitions>
