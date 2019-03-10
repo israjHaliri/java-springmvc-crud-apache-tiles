@@ -3,6 +3,16 @@
     + java8
     + mysql
     + tomcat
+
+## Tech stacks
+    + maven 3
+    + java8
+    + mysql
+    + tomcat
+    + apache tiles
+    + javax mail
+    + jdbc template
+    + hibernate jpa
     
 ## To get started follow this checklist:
     + create schema nicenetworkdb
